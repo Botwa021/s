@@ -1,3 +1,4 @@
+// By sid
 let levelling = require('../lib/levelling')
 let fs = require('fs')
 let path = require('path')
@@ -6,17 +7,19 @@ let moment = require('moment-timezone')
 let jimp = require('jimp')
 let PhoneNumber = require('awesome-phonenumber')
 const defaultMenu = {
-  before: `┌───────────────────⬣
-│           *мυʀѕι∂ вσт-χмℓ*
-└┬────────────────✽  
-┌┤⬡ *Nama* : %name
-││⬡ *Role* : %role
-││⬡ *Level* : %level %exp / %maxexp
-││⬡ *Total Xp* : %totalexp XP
-││⬡ *Tanggal Islam* : %dateIslamic
-││⬡ *Tanggal* : %date
-││⬡ *Hari* : %week %weton
-│└────────────────✽
+  before: `
+┌───────────────────⬣
+│   *мυʀѕι∂ вσт-χмℓ*
+└───────────────────⬣
+│ ⬡ *Nama* : %name
+│
+│ ⬡ *Role* : %role
+│ ⬡ *Level* : %level %exp / %maxexp
+│ ⬡ *Total Xp* : %totalexp XP
+│ ⬡ *Tanggal Islam* : %dateIslamic
+│ ⬡ *Tanggal* : %date
+│ ⬡ *Hari* : %week %weton
+│
 │ ⬡ *Time* : %time WIB
 │ ⬡ *Pengguna* : %name 
 │ ⬡ *Limit* : %limit
@@ -24,7 +27,7 @@ const defaultMenu = {
 │ ⬡ *Level* : %level
 │ ⬡ *Role* : %role
 │ ⬡ *Premium* : ${global.prem ? 'Premium' : 'Gratisan'}
-├─────────────────✽
+│
 │⬡ *Baileys* : Baileys Multi Auth
 │⬡ *Uptime* : %uptime
 │⬡ *Owner* : Mursid S
